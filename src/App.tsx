@@ -13,7 +13,7 @@ import { Toaster } from "./components/refine-ui/notification/toaster";
 import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
 import "./App.css";
 import Dashboard from "@/pages/dashboard.tsx";
-import { BookOpen, Home } from "lucide-react";
+import { BookOpen, Home, School2Icon } from "lucide-react";
 import { Layout } from "@/components/refine-ui/layout/layout.tsx";
 import SubjectsList from "./pages/subjects/list";
 import SubjectsCreate from "./pages/subjects/create";
@@ -32,6 +32,10 @@ function App() {
 								syncWithLocation: true,
 								warnWhenUnsavedChanges: true,
 								projectId: "zj6kFC-kMbZnN-Z6Aeab",
+								title: {
+									icon: <School2Icon />,
+									text: "ClassRoom",
+								},
 							}}
 							resources={[
 								{
